@@ -19,19 +19,23 @@
 
 \documentclass{beamer}
 
-\mode<presentation> {
+\mode<beamer>{\usetheme{purduegold}}
 
-\usetheme{Madrid}
+%\mode<presentation> {
 
-\definecolor{OISTcolor}{rgb}{0.65,0.16,0.16}
-\usecolortheme[named=OISTcolor]{structure}
+%\usetheme{Madrid}
+
+%\definecolor{OISTcolor}{rgb}{0.65,0.16,0.16}
+%\usecolortheme[named=OISTcolor]{structure}
 
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
 %\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
-\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
-}
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+%}
 
+%\usepackage{fontspec}
+%\usepackage{xeCJK}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{textpos} % Use for positioning the Skill Pill logo
@@ -47,7 +51,7 @@
 
 % Allows side-by-side presentation notes
 \usepackage{pgfpages}
-\setbeameroption{show notes on second screen}
+%\setbeameroption{show notes on second screen}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -80,22 +84,22 @@
 \subtitle{Lecture 1: Git ready!}
 
 %\author{\textbf{James Schloss}} % Your name
-\author{\textbf{Christopher Buckley}} % Your name
-\institute[OIST] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\author{\textbf{Zhou Jiming}} % Your name
+\institute[NWPU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-Okinawa Institute of Science and Technology \\ % Your institution for the title page
+Northwestern Polytechnical University \\ % Your institution for the title page
 %\textit{james.schloss@oist.jp} % Your email address
 }
-\date{November 19, 2020} % Date of the presentation
+\date{\today} % Date of the presentation
 
 \begin{document}
 
-\setbeamertemplate{background}{\transparent{0.65}\includegraphics[width=\paperwidth]{SPbackground.png}} % Adding the background logo
+%\setbeamertemplate{background}{\transparent{0.65}\includegraphics[width=\paperwidth]{SPbackground.png}} % Adding the background logo
 
-\begin{frame}
+\begin{frame}[plain]
 \vspace*{1.4cm}
 \titlepage % Print the title page as the first slide
-\hfill \textbf{Slides by James Schloss, 2016}
+\hfill \textbf{Slides forked from GIT}
 \end{frame}
 
 \setbeamertemplate{background}{} % No background logo after title frame
@@ -108,7 +112,8 @@ Okinawa Institute of Science and Technology \\ % Your institution for the title 
 
 \begin{frame}
 \frametitle{Overview} % Table of contents slide, comment this block out to remove it
-\hfill
+%\hfill
+\vspace*{1cm}
 \parbox[t]{0.9\textwidth} {
 \begin{minipage}[c][0.65\textheight]{\textwidth}
 \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
@@ -330,7 +335,7 @@ git reset <file>
 
 \subsection{Making Commits}
 
-\begin{frame}[fragile]
+\begin{frame}[fragile,shrink]
 \frametitle{Making Commits}
     \begin{block}{EXERCISE}
         \begin{enumerate}
@@ -363,7 +368,7 @@ git checkout a1e8fb5 hello.py
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
+\begin{frame}[fragile,shrink]
 \frametitle{Checkout Your History}
     \begin{block}{EXERCISE}
         \begin{enumerate}
@@ -445,7 +450,7 @@ Now we move to the fun* stuff: working with \textbf{online repositories}.
 *Here, the word \textit{fun} is subject to interpretation.
 \end{frame}
 
-\begin{frame}[fragile]
+\begin{frame}[fragile,shrink]
 \frametitle{Quick Exercise}
     \begin{block}{EXERCISE}
         \begin{enumerate}
